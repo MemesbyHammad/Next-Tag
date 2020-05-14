@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Signin page</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<style> 
+	/*add full-width input fields*/ 
+	
+	input[type=text], 
+	input[type=password] { 
+		width: 100%; 
+		padding: 12px 20px; 
+		margin: 8px 0; 
+		display: inline-block; 
+		border: 2px solid #ccc; 
+		box-sizing: border-box; 
+	} 
+	/* set a style for all buttons*/ 
+	
+	button { 
+		background-color: green; 
+		color: white; 
+		padding: 15px 20px; 
+		margin: 8px 0; 
+		cursor: pointer; 
+		width: 100%; 
+	} 
+	/*set styles for the cancel button*/ 
+	
+	.cancelbtn { 
+		padding: 15px 20px; 
+		background-color: red; 
+	} 
+	/*float cancel and signup buttons and add an equal width*/ 
+	
+	.cancelbtn, 
+	.signupbtn { 
+		float: left; 
+		width: 45%;
+		margin-left: 20px; 
+	} 
+	/*add padding to container elements*/ 
+	
+	.container { 
+		padding: 16px; 
+	} 
+	/*clear floats*/ 
+	
+	.clearfix::after { 
+		content: ""; 
+		clear: both; 
+		display: table; 
+	} 
+	/*styles for cancel button and signup button 
+	on extra small screens*/ 
+	
+	@media screen and (max-width: 300px) { 
+		.cancelbtn, 
+		.signupbtn { 
+			width: 100%; 
+		} 
+	} 
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand,img" href="#"><img src="Websites Pictures/logo 2.png" class="a"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="w3-dropdown-hover w3-hide-small"><a href="#">Gents Brands<i class="fa fa-caret-down"></i>    
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="hugo boss.html" class="w3-bar-item w3-button">Hugo Boss</a>
+      <a href="Tommy Hilfiger.html" class="w3-bar-item w3-button">Tommy Hilfiger</a>
+      <a href="coach.html" class="w3-bar-item w3-button">Coach</a>
+      <a href="Timberland.html" class="w3-bar-item w3-button">Timberland</a>
+      <a href="Mont Blanc.html" class="w3-bar-item w3-button">Mont Blanc</a>
+      <a href="Gucci.html" class="w3-bar-item w3-button">Gucci</a>
+      <a href="Dosh.html" class="w3-bar-item w3-button">Dosh</a>
+      <a href="Alpine Swiss.html" class="w3-bar-item w3-button">Alpine Swiss</a>
+    </div>
+  </a></li>
+        <li class="w3-dropdown-hover w3-hide-small"><a href="#">Ladies Brands<i class="fa fa-caret-down"></i>    
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="Chloé's Paraty.html" class="w3-bar-item w3-button">Chloé's Paraty</a>
+      <a href="YSL's Muse.html" class="w3-bar-item w3-button">YSL's Muse</a>
+      <a href="The Chanel 2.55.html" class="w3-bar-item w3-button">The Chanel 2.55</a>
+      <a href="Coach's Willis.html" class="w3-bar-item w3-button">Coach's Willis</a>
+      <a href="Chloé Marcie.html" class="w3-bar-item w3-button">Chloé Marcie</a>
+      <a href="Fendi Baguette.html" class="w3-bar-item w3-button">Fendi Baguette</a>
+      <a href="Hermès Birkin.html" class="w3-bar-item w3-button">Hermès Birkin</a>
+      <a href="The HermèsKelly.html" class="w3-bar-item w3-button">The HermèsKelly</a>
+    </div>
+  </a></li>
+       
+         <li class="w3-dropdown-hover w3-hide-small"><a href="#">Comparison<i class="fa fa-caret-down"></i>  
+        <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="compare_gents.html" class="w3-bar-item w3-button">Gents</a>
+      <a href="compare_ladies.html" class="w3-bar-item w3-button">Ladies</a>
+      
+    </div> </a></li>
+       <li><a href="contact.html">Contact us</a></li>
+   </ul>
+      <ul class="nav navbar-nav navbar-right">
+         <li class="active"><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
+        <li><a href="login.html"><i class="fa fa-user-circle-o"></i></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<h2 style="padding: 10px; color: black;" align="center"><b class="head">Sign Up Your Gmail Account</b></h2> 
+	<!--Step 1:Adding HTML--> 
+	<form style="border:1px solid #ccc"> 
+		<div class="container"> 
+			<label><b>Email</b></label> 
+			<input type="text" placeholder="Enter Email" name="email" required class="form-control"> 
+
+			<label><b>Password</b></label> 
+			<input type="password" placeholder="Enter Password" name="psw" required class="form-control"> 
+
+			<label><b>Repeat Password</b></label> 
+			<input type="password" placeholder="Repeat Password" name="psw-repeat" required class="form-control"> 
+			<input type="checkbox" checked="checked"> Remember me 
+			<p>To create an account you have to agree our <a href="#">Terms & Privacy</a>.</p> 
+
+			<div class="clearfix"> 
+				<button type="button" class="cancelbtn">Cancel</button> 
+				<button type="submit" class="signupbtn">Sign Up</button> 
+			</div> 
+		</div> 
+	</form> 
+<div class="w3-col m5" style="padding: 20px;">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-blue w3-bottombar"><font color="white">Contact Us</font></span></div>
+      <h3><font color="white">Address:</font></h3>
+      <p><i class="fa fa-map-marker w3-text-blue w3-xlarge"></i><font color="white">123mainstreet,123456,karachi,PAKISTAN.</font></p>
+      <p><i class="fa fa-phone w3-text-blue w3-xlarge"></i><font color="white">+00 15151515153</p>
+      <p><i class="fa fa-envelope-o w3-text-blue w3-xlarge"></i><font color="white">abc@gmail.com</p>
+        <p><i class="fa fa-globe w3-text-blue w3-xlarge" style="font-size:24px"></i><font color="white">www.Nextag.com</p>
+    </div>
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-blue" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-blue" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-blue" href="javascript:void(0)" title="youtube"><i class="fa fa-youtube"></i></a>
+  <a class="w3-button w3-large w3-blue" href="javascript:void(0)" title="whatsapp"><i class="fa fa-whatsapp"></i></a>
+  <a class="w3-button w3-large w3-blue" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-blue" href="javascript:void(0)" title="instagram"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-blue w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+
+
+ 
+</footer>
+  
+
+</body>
+</html>
